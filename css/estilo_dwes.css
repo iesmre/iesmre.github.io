@@ -4,9 +4,13 @@ body
     font-family: 'Arial', sans-serif; /* Tipo de letra del body */
 }
 
-.titulo
-{
+header {
+    background-color: #333; /* Color de fondo del menú de navegación */
+    color: #f2f2f2; /* Color del texto en el menú de navegación */
     margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    width: 100%
 }
 
 h1
