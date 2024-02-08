@@ -44,19 +44,28 @@
         }
 
 
+
+
         /* Estilo para la capa flotante */
-        .floating-image {
+        .floating-layer {
             position: fixed;
             top: 20px;
             right: 20px;
-            cursor: pointer;
+            background-color: #4285f4; /* Color de fondo del botón */
+            color: #fff; /* Color del texto del botón */
+            padding: 10px 15px;
+            border-radius: 5px;
             display: none; /* Inicialmente oculto */
             z-index: 1000; /* Asegura que la capa flotante esté encima del contenido */
+            text-align: center;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
         }
 
-        /* Estilo para la animación de la imagen al pasar el ratón */
-        .floating-image:hover {
-            transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+        /* Estilo para la animación de la capa flotante al pasar el ratón */
+        .floating-layer:hover {
+            background-color: #3367d6; /* Cambia de color al pasar el ratón */
         }
 
         /* Estilo para la capa de contenido (puede ser tu contenido principal) */
