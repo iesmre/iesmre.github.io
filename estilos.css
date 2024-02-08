@@ -26,6 +26,8 @@
             border: 1px solid #333; /* Borde de los botones */
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            width: 120px; /* Ancho fijo para todos los botones */
+            text-align: center; /* Centra el texto dentro del botón */
         }
 
         nav a:hover {
