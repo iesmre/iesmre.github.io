@@ -12,6 +12,7 @@
             color: #f2f2f2; /* Color del texto en el menú de navegación */
             padding: 15px;
             text-align: center;
+            width: 100%
         }
 
         .navbar {
