@@ -3,10 +3,8 @@
             font-family: 'Arial', sans-serif; /* Tipo de letra del body */
             margin: 0;
             padding: 0;
-            align-items: center;
-            justify-content: center;
-                        display: flex;
-
+            display: grid;
+            place-items: center;
         }
 
         header {
@@ -19,6 +17,7 @@
         .navbar {
             background-color: #f2f2f2;
             overflow: hidden;
+            text-align: center;
         }
 
         .navbar a {
