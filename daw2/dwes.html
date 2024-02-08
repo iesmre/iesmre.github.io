@@ -10,7 +10,7 @@
 
     <header>
         <a href="../index.html">
-          <img src="../img/return-white.png" alt="volver" style="float:right;" width=30% />
+          <img src="../img/return-white.png" alt="volver" style="float:right;" width="30%" />
         </a>
         <h1>Desarrollo Web en Entorno Servidor</h1>
         <h2>DWES</h2>
@@ -28,6 +28,10 @@
         <a href="#">Unidad 8<br/>Laravel (formularios, validación servicios REST, autenticación)</a>
     </div>
 
+    <!-- Capa flotante con la imagen -->
+    <img class="floating-image" src="icono_volver.png" alt="Volver" onclick="goToHomePage()">
+
+
     <main>
         <!-- Contenido principal de la página -->
         <p></p>
@@ -41,6 +45,26 @@
                 x.className += " responsive";
             } else {
                 x.className = "navbar";
+            }
+        }
+
+
+        // Función para volver a la página de inicio (puedes cambiar la URL)
+        function goToHomePage() {
+            window.location.href = "index.html"; // Cambia la URL según tu estructura de carpetas
+        }
+
+        // Mostrar la capa flotante después de cierto desplazamiento
+        window.onscroll = function () {
+            showFloatingImage();
+        };
+
+        function showFloatingImage() {
+            var image = document.querySelector('.floating-image');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                image.style.display = 'block';
+            } else {
+                image.style.display = 'none';
             }
         }
     </script>

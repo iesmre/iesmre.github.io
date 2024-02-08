@@ -42,3 +42,24 @@
                 width: 100%;
             }
         }
+
+
+        /* Estilo para la capa flotante */
+        .floating-image {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            display: none; /* Inicialmente oculto */
+            z-index: 1000; /* Asegura que la capa flotante esté encima del contenido */
+        }
+
+        /* Estilo para la animación de la imagen al pasar el ratón */
+        .floating-image:hover {
+            transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+        }
+
+        /* Estilo para la capa de contenido (puede ser tu contenido principal) */
+        .content {
+            padding: 20px;
+        }
