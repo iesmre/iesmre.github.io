@@ -14,7 +14,11 @@
         <h3>1º DAW</h3>
     </header>
 
-    <nav>
+    <div class="navbar" id="myNavbar">
+        <a href="#" class="icon" onclick="toggleNavbar()">
+            &#9776; <!-- Icono de hamburguesa -->
+        </a>
+
         <a href="#">Unidad 0<br/>Conocimientos previos</a>
         <a href="#">Unidad 1<br/>Elementos de un programa informático</a>
         <a href="#">Unidad 2<br/>Uso de objetos y clases</a>
@@ -26,13 +30,24 @@
         <a href="#">Unidad 8<br/>Composición, Herencia y Polimorfismo</a>
         <a href="#">Unidad 9<br/>Interfaz gráfica</a>
         <a href="#">Unidad 10<br/>Acceso a base de datos</a>
-        <a href="../index.html"></a>
-    </nav>
+    </div>
 
     <main>
         <!-- Contenido principal de la página -->
         <p>...</p>
     </main>
+
+    <script>
+        // Función para mostrar/ocultar el menú en dispositivos móviles
+        function toggleNavbar() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
 
 </body>
 </html>
