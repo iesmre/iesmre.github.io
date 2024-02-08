@@ -15,10 +15,11 @@
         .navbar {
             background-color: #f2f2f2;
             overflow: hidden;
+            text-align: center;
         }
 
         .navbar a {
-            float: center;
+            float: left;
             display: block;
             text-decoration: none;
             color: #333; /* Color de texto de los enlaces */
